@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
+import Account1 from "../assets/account.png";
 
 const fullName = ref('');
 const email = ref('');
@@ -87,7 +88,7 @@ function handleSubmit() {
       <!-- Right: image -->
       <div class="hidden md:block">
         <img
-          src="https://picsum.photos/seed/register/600/700"
+          :src="Account1"
           alt="Shopping"
           class="w-full h-full object-cover"
         />
